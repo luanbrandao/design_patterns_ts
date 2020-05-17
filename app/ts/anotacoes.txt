@@ -1,12 +1,28 @@
 -->aula_1 Strategy <--
 
-"evita o uso de vários ifs"
+problema: uso de vários ifs, toda vez que cria um novo imposto é preciso adicionar
+ um novo if.
 
-- passa o tipo de imposta para a calculadora
+solução: criar uma classe para cada imposts e passa o tipo de imposta para a calculadora
 
 
 -->aula_2 Chain of Responsibility <--
 
-"evita vários ifs, e faz com que  uma classe saiba chamar sua 
-próxima em forma de encadeamento"
+problema:  uso de vários ifs, se uma desconto falhar precisa saber qual 
+é o próximo.
 
+solução: evita vários ifs, e faz com que  uma classe saiba chamar sua 
+próxima em forma de encadeamento.
+
+
+--> Template Method <--
+
+problema: 2 classes com métodos e lógica parecida para 
+cálculo de impostos"
+
+solução: é como se fizesse um model do algoritimo paras as outras 
+classes usarem. 
+
+
+--> <--
+"quando tem classes muito parecidas podemos criar um model"
