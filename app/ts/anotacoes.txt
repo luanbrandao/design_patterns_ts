@@ -1,0 +1,5 @@
+-->aula_1 Strategy <--
+
+"evita o uso de vários ifs"
+
+- passa o tipo de imposta para a calculadora
