@@ -3,3 +3,10 @@
 "evita o uso de vários ifs"
 
 - passa o tipo de imposta para a calculadora
+
+
+-->aula_2 Chain of Responsibility <--
+
+"evita vários ifs, e faz com que  uma classe saiba chamar sua 
+próxima em forma de encadeamento"
+
