@@ -17,7 +17,7 @@ class ICPP  extends TemplateDeImpostoCondicional {
     return orcamento.getValor() * 0.07;
   }
   minimaTaxacao(orcamento: Orcamento) {
-    return orcamento.getValor() * 0.5;
+    return orcamento.getValor() * 0.05;
   }
 
 }

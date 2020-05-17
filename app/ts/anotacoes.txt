@@ -15,7 +15,7 @@ solução: evita vários ifs, e faz com que  uma classe saiba chamar sua
 próxima em forma de encadeamento.
 
 
---> Template Method <--
+-->aula_3 Template Method <--
 
 problema: 2 classes com métodos e lógica parecida para 
 cálculo de impostos"
@@ -24,5 +24,11 @@ solução: é como se fizesse um model do algoritimo paras as outras
 classes usarem. 
 
 
---> <--
-"quando tem classes muito parecidas podemos criar um model"
+-->aula_4 Decorator  <--
+problema: quando que fazer impostos compostos, juntando ISS com ICMS, teria
+que criar uma classa nova toda vez que quisesse unir os impostos.
+
+solução: passar o comportamento para o contrutor do Imposto, 
+transformando a INTERFACE Imposto em uma classe Abstrata e adicionando outroImposto, assim o Imposto vai saber qual
+é o proximo e todas as outras classes recebem no contrutor o próximo imposto
+
