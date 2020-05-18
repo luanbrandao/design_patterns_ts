@@ -53,3 +53,13 @@ solução: criar uma classe para facilitar a criação de nota fiscal, assim fic
 amigável;
 
 * Interfaces Fluentes: chamar os métodos em cadeia usando '.' ;
+
+-->aula7 Observer<--
+problema: antes de criar a nota fiscal tem que fazer várias ações como salvar 
+no banco banco e enviar email, isso deixa com problema de acoplamento.
+
+solução: diminuir o acoplamento,criando observadores.
+
+* "quando temos ações que são executadas após um
+comportamento, elas são chamadas de observadores".
+

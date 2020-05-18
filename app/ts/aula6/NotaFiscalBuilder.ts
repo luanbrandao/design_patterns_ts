@@ -7,6 +7,12 @@ class NotaFiscalBuilder {
   private observacoes: string;
   private data: Date;
 
+  private todasAcoesAseremExecutadas:AcaoAposGerarNota[] =[];
+
+  adicionaAcao(acao:AcaoAposGerarNota) {
+      this.todasAcoesAseremExecutadas.push(acao);
+  }
+
   paraEmpresa(razaoSocial) {
   this.razaoSocial = razaoSocial;
   return this;
@@ -36,14 +42,30 @@ class NotaFiscalBuilder {
   }
 
   constroi() {
-  return new NotaFiscal(
-    this.razaoSocial,
-    this.cnpj,
-    this.data,
-    this.valorTotal,
-    this.impostos,
-    this.todosItens,
-    this.observacoes
-  )
+    const nf:NotaFiscal = new NotaFiscal(
+      this.razaoSocial,
+      this.cnpj,
+      this.data,
+      this.valorTotal,
+      this.impostos,
+      this.todosItens,
+      this.observacoes
+    )
+    
+    // new EnviadorDeEmail().executa(nf);
+    // new NotaFiscalDao().executa(nf);
+    // new EnviadorDeSms().executa(nf);
+    // new Impressora().executa(nf);
+
+    this.todasAcoesAseremExecutadas.forEach( acao => {
+      acao.executa(nf)
+    })
+
+    return nf;  
   }
+  
+  
+  
+  
+
 }
