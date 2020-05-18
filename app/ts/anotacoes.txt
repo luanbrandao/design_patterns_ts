@@ -43,3 +43,13 @@ no momento, e essa classe pode mudar de status, ir de Aprovado para Reporvado.
 solução:  quando temos objetos que a ação vária de acordo com o status interno,
 podemos optar por separar esses status em diferentes classes, menores e fáceis 
 de serem entendidas, o objeto príncipal contém o status e repasa a ação.
+
+--> aula_6 Builder<--
+
+problema: para criar uma nota fiscal tem que passar vários parametros,
+fica trabalhoso.
+
+solução: criar uma classe para facilitar a criação de nota fiscal, assim fica mais
+amigável;
+
+* Interfaces Fluentes: chamar os métodos em cadeia usando '.' ;
