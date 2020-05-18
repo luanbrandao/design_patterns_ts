@@ -3,7 +3,7 @@
 problema: uso de vários ifs, toda vez que cria um novo imposto é preciso adicionar
  um novo if.
 
-solução: criar uma classe para cada imposts e passa o tipo de imposta para a calculadora
+solução: criar uma classe para cada imposto e passa o tipo de imposta para a calculadora
 
 
 -->aula_2 Chain of Responsibility <--
@@ -20,11 +20,12 @@ próxima em forma de encadeamento.
 problema: 2 classes com métodos e lógica parecida para 
 cálculo de impostos"
 
-solução: é como se fizesse um model do algoritimo paras as outras 
+solução: é como se fizesse um model do algoritimo para as outras 
 classes usarem. 
 
-
 -->aula_4 Decorator  <--
+obs: a aula 4 não criou uma pasta, apenas refatoro os códigos.
+
 problema: quando que fazer impostos compostos, juntando ISS com ICMS, teria
 que criar uma classa nova toda vez que quisesse unir os impostos.
 
@@ -32,3 +33,13 @@ solução: passar o comportamento para o contrutor do Imposto,
 transformando a INTERFACE Imposto em uma classe Abstrata e adicionando outroImposto, assim o Imposto vai saber qual
 é o proximo e todas as outras classes recebem no contrutor o próximo imposto
 
+
+--> aula_5 State<--
+
+problema: um orcamento pode ter um destonto de acordo com o status que ele está 
+no momento, e essa classe pode mudar de status, ir de Aprovado para Reporvado.
+
+
+solução:  quando temos objetos que a ação vária de acordo com o status interno,
+podemos optar por separar esses status em diferentes classes, menores e fáceis 
+de serem entendidas, o objeto príncipal contém o status e repasa a ação.
