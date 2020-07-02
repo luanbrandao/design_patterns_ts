@@ -5,6 +5,7 @@
    valor: number ;
   private itens:Item[] =[]
 
+  // aula 4
   // private estadoAtual: number;
   // private EM_APROVACAO = 1;
   // private APROVADO = 2;
@@ -38,6 +39,8 @@
   //   }
 
   // }
+
+  // aula 4
   aplicarDescontoExtra() {
     // passa o proprio orcamento
     this.estadoAtual.aplicaDescontoExtra(this);

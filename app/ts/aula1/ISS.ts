@@ -1,6 +1,7 @@
 // class ISS implements Imposto {
 class ISS extends Imposto {
 
+  //aula 4
   public constructor(outroImposto:Imposto){
     super(outroImposto)
   }
