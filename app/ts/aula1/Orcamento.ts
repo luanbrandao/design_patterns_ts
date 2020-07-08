@@ -5,7 +5,7 @@
    valor: number ;
   private itens:Item[] =[]
 
-  // aula 4
+  // aula 5
   // private estadoAtual: number;
   // private EM_APROVACAO = 1;
   // private APROVADO = 2;
